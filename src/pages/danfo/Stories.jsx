@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Image, Link, Text } from "@chakra-ui/react";
 
 const Stories = () => {
   return (
@@ -28,8 +28,8 @@ const Stories = () => {
         w={"100%"}
         lineHeight={{ base: "19.2px", md: "28.8px" }}
       >
-        Discover inspiring stories, showcasing the journeys and
-        successes of our community members.
+        Discover inspiring stories, showcasing the journeys and successes of our
+        community members.
       </Text>
       <Grid
         templateColumns={"repeat(6, 1fr)"}
@@ -38,8 +38,7 @@ const Stories = () => {
         flexDir={"column"}
       >
         <GridItem
-          w={"100%"}
-          // maxW={{ base: "", lg: "558px" }}
+          w={["100%", "588px"]}
           bg="green100"
           colSpan={3}
           border={"4px solid #111413"}
@@ -47,43 +46,61 @@ const Stories = () => {
           fontSize={{ base: "24px", md: "40px" }}
           fontFamily={"clash"}
           fontWeight={600}
-          h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "50px" }}
-          pb={{ base: "32px", lg: "56px" }}
-          alignItems={"flex-end"}
+          minH={"168px"}
+          alignItems={"center"}
           display={"flex"}
+          justifyContent={"center"}
         >
           <Link
             href="https://open.substack.com/pub/roadtripcommunity/p/what-is-it-like-in-roadtrip-community?r=22y5cz&utm_campaign=post&utm_medium=web"
-            target="blank"
+            target="_blank"
+            display={"flex"}
+            alignItems={"center"}
           >
             <Text
               maxW={{ base: "", lg: "427px" }}
-              w={"100%"}
+              w={["100%"]}
               lineHeight={{ base: "19.2px", md: "44px" }}
               cursor={{ base: "", md: "pointer" }}
+              fontSize={"40px"}
+              fontWeight={500}
             >
               What is it like in RoadTrip Community
             </Text>
+            <Flex
+              alignItems={"center"}
+              justifyContent={"center"}
+              border={"2px solid #fff"}
+              w="56px"
+              h="46px"
+            >
+              <Image src="/images/white-arrow.png" alt="" />
+            </Flex>
           </Link>
         </GridItem>
 
         <GridItem
           w={"100%"}
-          // maxW={{ base: "", lg: "558px" }}
-          bg="yellow100"
+          maxW={{ base: "", lg: "592px" }}
+          bg="#F6B847"
           colSpan={3}
           border={"4px solid #111413"}
-          color={"black100"}
-          h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "50px" }}
-          pb={{ base: "32px", lg: "56px" }}
-          alignItems={"flex-end"}
+          color={"white"}
+          fontSize={{ base: "24px", md: "40px" }}
+          fontFamily={"clash"}
+          fontWeight={600}
+          minH={"168px"}
+          alignItems={"center"}
           display={"flex"}
+          justifyContent={"center"}
         >
           <Link
             href="https://open.substack.com/pub/roadtripcommunity/p/dreams-and-memories?r=22y5cz&utm_campaign=post&utm_medium=web"
             target="blank"
+            color={'#111413'}
+            display={'flex'}
+            alignItems={'center'}
+            justifyContent={'center'}
           >
             <Text
               maxW={{ base: "", lg: "386px" }}
@@ -96,6 +113,15 @@ const Stories = () => {
             >
               Dreams and memories
             </Text>
+            <Flex
+              alignItems={"center"}
+              justifyContent={"center"}
+              border={"2px solid #111413"}
+              w="56px"
+              h="46px"
+            >
+              <Image src="/images/black-arrow.png" alt="" />
+            </Flex>
           </Link>
         </GridItem>
         <GridItem
@@ -108,15 +134,18 @@ const Stories = () => {
           fontSize={{ base: "24px", md: "40px" }}
           fontFamily={"clash"}
           fontWeight={600}
-          h={{ base: "230px", lg: "293px" }}
+          minH={"168px"}
           px={{ base: "24px", lg: "50px" }}
-          pb={{ base: "32px", lg: "56px" }}
-          alignItems={"flex-end"}
+          alignItems={"center"}
           display={"flex"}
         >
           <Link
             href="https://open.substack.com/pub/roadtripcommunity/p/dealing-with-imposter-syndrome-from?r=22y5cz&utm_campaign=post&utm_medium=web"
-            target="blank"
+            target="_blank"
+            display={'flex'}
+            alignItems={'center'}
+            justifyContent={'space-between'}
+            w='100%'
           >
             <Text
               maxW={{ base: "", lg: "694px" }}
@@ -126,6 +155,15 @@ const Stories = () => {
             >
               Dealing with Imposter Syndrome: From an Actual Imposter
             </Text>
+            <Flex
+              alignItems={"center"}
+              justifyContent={"center"}
+              border={"2px solid #111413"}
+              w="56px"
+              h="46px"
+            >
+              <Image src="/images/black-arrow.png" alt="" />
+            </Flex>
           </Link>
         </GridItem>
         <GridItem
