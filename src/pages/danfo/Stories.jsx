@@ -75,7 +75,7 @@ const Stories = () => {
               border={"2px solid #fff"}
               w="56px"
               h="46px"
-              display={["none", "none", "block"]}
+              display={["none", "none", "flex"]}
             >
               <Image src="/images/white-arrow.png" alt="" />
             </Flex>
@@ -123,7 +123,7 @@ const Stories = () => {
               border={"2px solid #111413"}
               w="56px"
               h="46px"
-              display={["none", "none", "block"]}
+              display={["none", "none", "flex"]}
             >
               <Image src="/images/black-arrow.png" alt="" />
             </Flex>
@@ -166,7 +166,7 @@ const Stories = () => {
               border={"2px solid #111413"}
               w="56px"
               h="46px"
-              display={["none", "none", "block"]}
+              display={["none", "none", "flex"]}
             >
               <Image src="/images/black-arrow.png" alt="" />
             </Flex>
@@ -210,7 +210,7 @@ const Stories = () => {
               border={"2px solid #fff"}
               w="56px"
               h="46px"
-              display={["none", "none", "block"]}
+              display={["none", "none", "flex"]}
             >
               <Image src="/images/white-arrow.png" alt="" />
             </Flex>
@@ -253,7 +253,7 @@ const Stories = () => {
               border={"2px solid #111413"}
               w="56px"
               h="46px"
-              display={["none", "none", "block"]}
+              display={["none", "none", "flex"]}
             >
               <Image src="/images/black-arrow.png" alt="" />
             </Flex>
