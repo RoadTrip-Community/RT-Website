@@ -20,7 +20,6 @@ const Nav = ({ bg }) => {
       pos={"fixed"}
       w="100%"
       maxW={"1440px"}
-      margin={"auto"}
       borderLeft={{
         base: "",
         md: "1px solid #111413",

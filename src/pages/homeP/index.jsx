@@ -9,7 +9,6 @@ import Mission from "./Mission";
 import Partner from "./Partner";
 import Subscribe from "./Subscribe";
 import { content } from "../../content";
-import HeaderSEO from "../../components/Header";
 import { Box } from "@chakra-ui/react";
 
 // const AboutUs = () => {
