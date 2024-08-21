@@ -61,13 +61,14 @@ const Portfolios = () => {
       // px={{ base: "16px", lg: "122px" }}
       py={{ base: "56px", lg: "80px" }}
       w={"100%"}
+      px="20px"
     >
       <Text
         fontFamily={"clash"}
         fontSize={{ base: "40px", lg: "64px" }}
         color={"black100"}
         fontWeight={700}
-        px={{ base: "16px", lg: "122px" }}
+        px={{ base: "0", lg: "122px" }}
       >
         Featured portfolios
       </Text>
@@ -77,7 +78,7 @@ const Portfolios = () => {
         color={"black100"}
         fontWeight={{ base: 500, lg: 400 }}
         pb={"40px"}
-        pl={{ base: "61px", lg: "243px" }}
+        pl={{ base: "0", lg: "243px" }}
         maxW={{ base: "340px", lg: "690px" }}
         w={"100%"}
         lineHeight={{ base: "19.2px", lg: "28.8px" }}
@@ -174,7 +175,7 @@ const Portfolios = () => {
           <Flex
             // borderRight={{ base: "", md: "3px solid #111413" }}
             // borderLeft={{ base: "", md: "3px solid #111413" }}
-            w={{ base: "100%", md: "707px" }}
+            w={{ base: "100%", lg: "707px" }}
             // maxW={"707px"}
             // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
@@ -183,7 +184,7 @@ const Portfolios = () => {
           </Flex>
           <Flex
             // borderRight={{ base: "", md: "3px solid #111413" }}
-            w={{ base: "100%", md: "707px" }}
+            w={{ base: "100%", lg: "707px" }}
             maxW={"707px"}
             // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
@@ -192,7 +193,7 @@ const Portfolios = () => {
           </Flex>
           <Flex
             // borderRight={{ base: "", md: "3px solid #111413" }}
-            w={{ base: "100%", md: "707px" }}
+            w={{ base: "100%", lg: "707px" }}
             maxW={"707px"}
             // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
@@ -201,7 +202,7 @@ const Portfolios = () => {
           </Flex>
           <Flex
             // borderRight={{ base: "", md: "3px solid #111413" }}
-            w={{ base: "100%", md: "707px" }}
+            w={{ base: "100%", lg: "707px" }}
             maxW={"707px"}
             // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
@@ -210,7 +211,7 @@ const Portfolios = () => {
           </Flex>
           <Flex
             // borderRight={{ base: "", md: "3px solid #111413" }}
-            w={{ base: "100%", md: "707px" }}
+            w={{ base: "100%", lg: "707px" }}
             maxW={"707px"}
             // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
@@ -226,7 +227,7 @@ const Portfolios = () => {
       >
         <Flex
           w={"100%"}
-          maxW={"707px"}
+          maxW={['100%', '100%', "707px"]}
           borderBottom={"3px solid #111413"}
           h={"466px"}
         >
@@ -234,7 +235,7 @@ const Portfolios = () => {
         </Flex>
         <Flex
           w={"100%"}
-          maxW={"707px"}
+          maxW={['100%', '100%', "707px"]}
           borderBottom={"3px solid #111413"}
           h={"466px"}
         >
@@ -242,7 +243,7 @@ const Portfolios = () => {
         </Flex>
         <Flex
           w={"100%"}
-          maxW={"707px"}
+          maxW={['100%', '100%', "707px"]}
           borderBottom={"3px solid #111413"}
           h={"466px"}
         >
@@ -250,7 +251,7 @@ const Portfolios = () => {
         </Flex>
         <Flex
           w={"100%"}
-          maxW={"707px"}
+          maxW={['100%', '100%', "707px"]}
           borderBottom={"3px solid #111413"}
           h={"466px"}
         >
@@ -258,7 +259,7 @@ const Portfolios = () => {
         </Flex>
         <Flex
           w={"100%"}
-          maxW={"707px"}
+          maxW={['100%', '100%', "707px"]}
           borderBottom={"3px solid #111413"}
           h={"466px"}
         >

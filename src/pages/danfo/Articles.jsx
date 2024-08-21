@@ -23,7 +23,7 @@ const Articles = () => {
         color={"black100"}
         fontWeight={{ base: 500, lg: 400 }}
         pb={"40px"}
-        pl={{ base: "45px", lg: "121px" }}
+        pl={{ base: "0", lg: "121px" }}
         maxW={{ base: "340px", lg: "690px" }}
         w={"100%"}
         lineHeight={{ base: "19.2px", lg: "28.8px" }}
@@ -38,7 +38,7 @@ const Articles = () => {
       >
         <Flex
           h={"352px"}
-          maxW={"389px"}
+          maxW={["100%", '100%', "389px"]}
           w={"100%"}
           border={{
             base: "2px solid #111413",
@@ -86,7 +86,7 @@ const Articles = () => {
         </Flex>
         <Flex
           h={"352px"}
-          maxW={"389px"}
+          maxW={["100%", '100%', "389px"]}
           w={"100%"}
           border={{
             base: "2px solid #111413",
@@ -134,7 +134,7 @@ const Articles = () => {
         </Flex>
         <Flex
           h={"352px"}
-          maxW={"389px"}
+          maxW={["100%", '100%', "389px"]}
           w={"100%"}
           border={{
             base: "2px solid #111413",

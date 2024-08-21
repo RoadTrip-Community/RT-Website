@@ -14,7 +14,7 @@ import { Box } from "@chakra-ui/react";
 // const AboutUs = () => {
 const HomeP = () => {
   return (
-    <Box maxW={"1440px"} mx="auto">
+    <Box w='100%'>
       <HeaderSEO
         title={content.title}
         url={content.canonical_url}

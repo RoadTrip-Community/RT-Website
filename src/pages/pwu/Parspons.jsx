@@ -1,17 +1,13 @@
 import {
   Button,
   Text,
-  Image,
-  useBreakpointValue,
   Flex,
   Heading,
   Input,
   Box,
 } from "@chakra-ui/react";
-import React from "react";
 
 const Sponsors = () => {
-  const cardWidth = useBreakpointValue({ base: "100%", md: "500px" });
 
   return (
     <Flex

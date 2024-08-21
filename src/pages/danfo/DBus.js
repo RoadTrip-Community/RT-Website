@@ -1,6 +1,6 @@
 export const dBusdata = [
   {
-    bgColor: "yellow100",
+    bgColor: "#F9D78E",
     // image: "/images/Events/Masterclass.jpg",
     text: "Masterclasses",
     text2:
@@ -9,7 +9,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "green100",
+    bgColor: "#BDF5D5",
     // image: "/images/Events/Spotlight.jpg",
     text: "Village Meetings",
     text2:
@@ -18,7 +18,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "lilac100",
+    bgColor: "#C6CCFF",
     // image: "/images/Events/Hotseat.jpg",
     text: "Mental Health Sessions",
     text2:
@@ -27,7 +27,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "pink100",
+    bgColor: "#F5B8AC",
     // image: "/images/Events/AMASession.jpg",
     text: "AMA Session",
     text2:
@@ -36,7 +36,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "blue100",
+    bgColor: "#93C2FD",
     // image: "/images/Events/SocialMedia.jpg",
     text: "Social Media Pod",
     text2:
@@ -45,7 +45,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "lilac100",
+    bgColor: "#C6CCFF",
     // image: "/images/Events/openSource.jpg",
     text: "Open Source",
     text2:
@@ -54,7 +54,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "green100",
+    bgColor: "#89ECB3",
     // image: "/images/Events/Playlist.jpg",
     text: "RT Challenge",
     text2:
@@ -63,7 +63,7 @@ export const dBusdata = [
   },
 
   {
-    bgColor: "yellow100",
+    bgColor: "#F9D78E",
     // image: "/images/Events/Playlist.jpg",
     text: "Annual Hot Sessions",
     text2:

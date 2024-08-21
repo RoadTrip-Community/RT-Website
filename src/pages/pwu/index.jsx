@@ -1,9 +1,9 @@
 import Hero from "./Hero";
 import Sponsors from "./sponsors";
 import Partners from "./partners";
-import Parspons from "./Parspons";
 import HeaderSEO from "../../components/Header";
 import { content } from "../../content";
+import Subscribe from "../homeP/Subscribe";
 
 const PartnerWithUs = () => {
   return (
@@ -18,7 +18,7 @@ const PartnerWithUs = () => {
       <Hero />
       <Sponsors />
       <Partners />
-      <Parspons />
+      <Subscribe />
     </>
   );
 };

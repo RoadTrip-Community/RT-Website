@@ -25,7 +25,7 @@ const Roadtrippers = () => {
       >
         <Flex
           bg={"lilac300"}
-          maxW={"588px"}
+          maxW={["100%", "100%", "588px"]}
           h={{ base: "675px", md: "866px" }}
           w={"100%"}
           color={"black100"}
@@ -60,7 +60,7 @@ const Roadtrippers = () => {
           </Text>
           <Flex
             bg={"#E1E6E3"}
-            maxW={"508px"}
+            maxW={["100%", '100%', "508px"]}
             w={"100%"}
             h={{ base: "373px", md: "522px" }}
             borderTop={"3px solid #000"}
@@ -79,7 +79,7 @@ const Roadtrippers = () => {
         </Flex>
         <Flex
           bg={"blue300"}
-          maxW={"588px"}
+          maxW={["100%", "100%", "588px"]}
           h={{ base: "675px", md: "866px" }}
           w={"100%"}
           color={"black100"}
@@ -115,7 +115,7 @@ const Roadtrippers = () => {
           </Text>
           <Flex
             bg={"#E1E6E3"}
-            maxW={"508px"}
+            maxW={["100%", '100%', "508px"]}
             w={"100%"}
             h={{ base: "373px", md: "522px" }}
             borderTop={"3px solid #000"}

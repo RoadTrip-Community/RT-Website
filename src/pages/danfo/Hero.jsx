@@ -29,6 +29,8 @@ const Hero = () => {
         fontWeight={700}
         color={"black100"}
         fontSize={{ base: "40px", lg: "80px" }}
+        lineHeight={{ base: '40px', lg: '98.4px'}}
+        mt="1rem"
       >
         INSIDE DANFO BUS
       </Text>

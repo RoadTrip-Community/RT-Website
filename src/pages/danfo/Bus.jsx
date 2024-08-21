@@ -1,4 +1,4 @@
-import { Flex, Text, GridItem, Grid } from "@chakra-ui/react";
+import { Flex, Text, GridItem, Grid, Box } from "@chakra-ui/react";
 import { dBusdata } from "./DBus";
 
 const Bus = () => {
@@ -22,120 +22,106 @@ const Bus = () => {
         fontFamily={"manrope"}
         fontSize={{ base: "16px", lg: "24px" }}
         color={"black100"}
-        fontWeight={{ base: 500, lg: 400 }}
-        pb={"40px"}
-        pl={{ base: "61px", lg: "243px" }}
+        fontWeight={400}
+        pb={"80px"}
+        pl={{ base: "20px", lg: "243px" }}
         maxW={{ base: "340px", lg: "690px" }}
         w={"100%"}
         lineHeight={{ base: "19.2px", lg: "28.8px" }}
       >
         Explore impressive portfolios crafted by our talented members,
-        showcasing their diverse skills and creativity. Get ready to
-        be inspired!
+        showcasing their diverse skills and creativity. Get ready to be
+        inspired!
       </Text>
 
-      <Grid
-        templateColumns={"1fr 1fr"}
-        display={{ base: "flex", md: "grid" }}
-        flexDir={"column"}
-        gap={1}
-      >
+      <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
         {dBusdata.map((data, index) => {
           const { text, text2, text3, bgColor } = data;
 
           return (
-            <GridItem
+            <Box
               key={index}
               flexDir={"column"}
               justifyContent={"flex-end"}
-              w={"100%"}
+              w={["100%", "100%", "50%"]}
               bgColor={bgColor}
-              // maxW={{ base: "", lg: "558px" }}
-              // bg={`rgba(255, 255, 0, 0.10)`}
-              // style={{
-              //   backgroundImage: `url(${image})`,
-              //   backgroundSize: "cover",
-              //   backgroundPosition: "center",
-              //   // backdropFilter: "brightness(0.1) blur(50px)",
-              //   boxShadow: "352px 352px #11131286 inset"
-
-              // }}
               borderTop={{
                 base: "2px solid #111413",
-                md: "4px solid #111413",
+                md: "2px solid #111413",
               }}
               borderBottom={{
                 base: "2px solid #111413",
-                md: "4px solid #111413",
+                md: "2px solid #111413",
               }}
               borderRight={{
                 base: "",
-                md: "4px solid #111413",
+                md: "2px solid #111413",
               }}
               color={"black100"}
-              h={{ base: "268px", lg: "282px" }}
+              h={{ base: "268px", lg: "182px" }}
               px={{ base: "16px", lg: "120px" }}
               pb={{ base: "24px", lg: "28px" }}
               display={"flex"}
               fontWeight={600}
             >
-
               <Flex>
-                <Flex
-                  mb={"2.7px"}
-                  mr={"2.7px"}
-                >
+                <Flex mb={"2.7px"} mr={"2.7px"} alignItems={'center'} gap={'10px'}>
                   <Text
                     lineHeight={{ base: "39.36px", md: "49.2px" }}
-                    pb={"8px"}
-                    fontSize={{ base: "25px", md: "23px", lg:"32px" }}
+                    fontSize={{ base: "25px", md: "23px", lg: "32px" }}
                     fontFamily={"clash"}
-                    color={"white"}
-
+                    color={"#111413"}
                   >
-
                     {text}
-
                   </Text>
 
-                  <Text
-                    lineHeight={{ base: "39.36px", md: "49.2px" }}
-                    pl={3}
-                    pr={3}
-                    ml={"12px"}
-                    fontSize={"12px"}
-                    fontFamily={"clash"}
-                    color={"white"}
-                    fontWeight={500}
-                    border={"1px solid #ffff"}
+                  <Flex
+                    alignItems={"center"}
+                    justifyContent={"center"}
+                    bgColor={"#CC4D34"}
+                    minW="90x"
+                    h="35px"
                     borderRadius={"100px"}
-                    bgColor={"red"}
-                    display={{ base: "none", md: "flex" }}
-                    alignItems={'center'}
-                    borderStyle={"double"}
-                    h={'35px'}
+                    px="5px"
                   >
-
-                    {text3}
-
-                  </Text>
-            </Flex>
-          </Flex>
-
+                    <Text
+                      lineHeight={{ base: "39.36px", md: "49.2px" }}
+                      pl={3}
+                      pr={3}
+                      fontSize={"12px"}
+                      fontFamily={"clash"}
+                      color={"white"}
+                      fontWeight={500}
+                      border={"1px solid #ffff"}
+                      borderRadius={"100px"}
+                      bgColor={"#CC4D34"}
+                      display={"flex"}
+                      justifyContent={'center'}
+                      alignItems={"center"}
+                      borderStyle={"double"}
+                      h={"27px"}
+                      minW="82px"
+                    >
+                      {text3}
+                    </Text>
+                  </Flex>
+                </Flex>
+              </Flex>
 
               <Text
                 lineHeight={"21.86px"}
                 pb={"8px"}
                 fontSize={"16px"}
                 fontFamily={"manrope"}
-                color={"white"}
+                color={"#111413"}
+                fontWeight={600}
               >
                 {text2}
               </Text>
-            </GridItem>
+            </Box>
           );
         })}
-      </Grid>
+      </Flex>
     </Flex>
   );
 };
