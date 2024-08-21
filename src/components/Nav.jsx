@@ -1,8 +1,9 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+
 import Button from "./Button";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
 import { Routes } from "../routes/baseRoutes";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Nav = ({ bg }) => {
@@ -14,7 +15,7 @@ const Nav = ({ bg }) => {
       flexDir={"column"}
       justifyContent={"center"}
       zIndex={"100"}
-      bg={bg}
+      bg={showNav ? "white" : bg}
       bgImage={"images/rough-bg.png"}
       pos={"fixed"}
       w="100%"
@@ -34,7 +35,7 @@ const Nav = ({ bg }) => {
           md: "4px solid",
         }}
         borderColor={"black100"}
-        // py={"12.52px"}
+      // py={"12.52px"}
       >
         <Box
           pl={{ base: "19px", md: "24px" }}
@@ -58,6 +59,7 @@ const Nav = ({ bg }) => {
           display={{ base: showNav ? "flex" : "none", lg: "none" }}
           pl={{ base: "19px", md: "24px" }}
           alignItems={"center"}
+          bg={showNav ? "white" : ""}
         >
           <Text fontSize={"1rem"} fontFamily={"clash"} fontWeight={600}>
             Menu
@@ -115,7 +117,7 @@ const Nav = ({ bg }) => {
             <Button
               text={"DONATE"}
               cursor={"pointer"}
-              // onClick={() => navigate(Routes.donate)}
+            // onClick={() => navigate(Routes.donate)}
             />
           </a>
         </Flex>
@@ -126,6 +128,7 @@ const Nav = ({ bg }) => {
           px={"24px"}
           alignItems={"center"}
           display={{ base: "flex", lg: "none" }}
+          bg={showNav ? "white" : ""}
         >
           {showNav ? (
             <CloseIcon
@@ -142,12 +145,23 @@ const Nav = ({ bg }) => {
           )}
           {/* </Flex> */}
         </Flex>
-        {showNav && (
+      </Flex>
+      {showNav && (
+        <Flex
+          justifyContent={"space-between"}
+          flexDir={"column"}
+          h={"calc(100vh - 64px)"}
+          bg={"white"}
+          display={{ base: "flex", lg: "none" }}
+        >
           <Flex
             justifyContent={"space-between"}
             flexDir={"column"}
-            h={"calc(100vh - 64px)"}
-            display={{ base: "flex", lg: "none" }}
+            fontSize={"2rem"}
+            fontWeight={600}
+            fontFamily={"clash"}
+            color={"black200"}
+            bg={"white"}
           >
             <Flex
               flexDir={"column"}
@@ -238,8 +252,15 @@ const Nav = ({ bg }) => {
               </a>
             </Flex>
           </Flex>
-        )}
-      </Flex>
+          <Flex onClick={() => navigate(Routes.danfo)}>
+            <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank"
+              style={{ width: "100%", maxWidth: "100rem" }}>
+              <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
+            </a>
+          </Flex>
+        </Flex>
+      )}
+
     </Flex>
   );
 };
