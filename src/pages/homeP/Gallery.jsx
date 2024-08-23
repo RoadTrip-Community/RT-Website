@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Link } from "@chakra-ui/react";
 
 const Gallery = () => {
   return (
@@ -65,6 +65,17 @@ const Gallery = () => {
           </div>
         </Flex>
       </div>
+
+      <Link
+        href="https://bit.ly/jointheRTWaitlist"
+        target="_blank"
+      >
+        <button className="forCTA flex justify-center items-center pt-6 lg:pt-12 mx-auto">
+          <div className=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">
+            Join our waitlist
+          </div>
+        </button>
+      </Link>
     </section>
   );
 };
