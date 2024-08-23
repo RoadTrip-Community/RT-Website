@@ -8,7 +8,7 @@ const Subscribe = () => {
       px={{ base: "16px", lg: "122px" }}
       py={{ base: "56px", lg: "80px" }}
       w={"100%"}
-      mt="10rem"
+      mt="4rem"
     >
       <Heading
         as={"h2"}
