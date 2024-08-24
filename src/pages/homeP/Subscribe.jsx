@@ -1,4 +1,12 @@
-import { Box, Button, Flex, Heading, Text, Input } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Text,
+  Input,
+  Link,
+} from "@chakra-ui/react";
 
 const Subscribe = () => {
   return (
@@ -83,6 +91,16 @@ const Subscribe = () => {
           zIndex={1}
         ></Box>
       </Box>
+      <Link
+        href="https://docs.google.com/document/d/1StzYTjFDRBvy_9Z23dZCQFp6dXC0eWX8gAR9VtoTpnM/edit#heading=h.b1m7p9ok0ns5"
+        target="_blank"
+        textAlign={"center"}
+        color={"white"}
+        mt=".5rem"
+        fontSize={"14px"}
+      >
+        Read our mailing list policy
+      </Link>
     </Flex>
   );
 };
