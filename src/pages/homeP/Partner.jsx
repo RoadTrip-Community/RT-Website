@@ -14,7 +14,7 @@ const Partner = () => {
                 <img src="/images/UDC.svg" width={"180.96px"} height={"121px"} />
             </div>
             <div className="flex justify-center">
-                <a href="/partners" className="bg-black text-white px-3.5 py-2 cD600 text-center">See All Our Partners</a>
+                <a href="/partner-with-us" className="bg-black text-white px-3.5 py-2 cD600 text-center">See All Our Partners</a>
             </div>
         </div>
     )
