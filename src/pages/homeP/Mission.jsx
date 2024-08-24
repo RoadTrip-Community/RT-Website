@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Mission = () => {
+  const router = useNavigate()
   return (
     <section className="bodyCon">
       <div className="conntianer px-[12px] lg:px-[120px] py-[48px] lg:py-[72px]">
@@ -64,9 +67,9 @@ const Mission = () => {
           </div>
         </div>
         <div className="forCTA flex justify-center items-center pt-6 lg:pt-12">
-          <div className=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">
+          <button onClick={() => router('/about-us')} className=" bg-[#231f20] offshadctayellow py-4 lg:py-5 text-xs lg:text-base px-8 text-white uppercase cD600">
             More About Us
-          </div>
+          </button>
         </div>
       </div>
     </section>

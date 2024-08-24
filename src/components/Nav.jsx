@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 import Button from "./Button";
@@ -34,7 +34,7 @@ const Nav = ({ bg }) => {
           md: "4px solid",
         }}
         borderColor={"black100"}
-      // py={"12.52px"}
+        // py={"12.52px"}
       >
         <Box
           pl={{ base: "19px", md: "24px" }}
@@ -111,12 +111,23 @@ const Nav = ({ bg }) => {
           >
             Partner With Us
           </Text>
+          <Image src={"/images/ellipse.png"} pr={"24px"} />
+
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.partner)}
+          >
+            <Link href="https://bit.ly/jointheRTWaitlist" target="_blank">
+              Join our waitlist
+            </Link>
+          </Text>
 
           <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank">
             <Button
               text={"DONATE"}
               cursor={"pointer"}
-            // onClick={() => navigate(Routes.donate)}
+              // onClick={() => navigate(Routes.donate)}
             />
           </a>
         </Flex>
@@ -240,6 +251,27 @@ const Nav = ({ bg }) => {
                   Partner With Us
                 </Text>
               </Flex>
+
+              <Flex
+                py={"40px"}
+                borderBottom={"3px solid"}
+                borderColor={"black200"}
+                w={"100%"}
+                alignItems={"center"}
+                justifyContent={"center"}
+              >
+                <Text
+                  pr={"24px"}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    setShowNav(false);
+                  }}
+                >
+                  <Link href="https://bit.ly/jointheRTWaitlist" target="_blank">
+                    Join our waitlist
+                  </Link>
+                </Text>
+              </Flex>
             </Flex>
             <Flex onClick={() => navigate(Routes.danfo)}>
               <a
@@ -252,14 +284,16 @@ const Nav = ({ bg }) => {
             </Flex>
           </Flex>
           <Flex onClick={() => navigate(Routes.danfo)}>
-            <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank"
-              style={{ width: "100%", maxWidth: "100rem" }}>
+            <a
+              href="https://flutterwave.com/donate/4l0tmtvm76fk"
+              target="_blank"
+              style={{ width: "100%", maxWidth: "100rem" }}
+            >
               <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
             </a>
           </Flex>
         </Flex>
       )}
-
     </Flex>
   );
 };
